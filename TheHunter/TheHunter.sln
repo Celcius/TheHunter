@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmoaebaUtils", "AmoaebaUtils.csproj", "{ef9883f9-ab90-8dfe-5501-4be51811e8f3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance", "Persistance.csproj", "{c0f186c4-a1c5-f73b-76ef-08d064267372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmoaebaAds", "AmoaebaAds.csproj", "{c0edbe37-8688-5ede-39f6-0052b1d40a7e}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InControl", "InControl.csproj", "{b6ebb3d7-714a-6d48-7f27-d5fd217f1ed9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InControl.Examples", "InControl.Examples.csproj", "{ffff8fb2-cff9-76fe-8c35-19b59bce1f57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePack", "MessagePack.csproj", "{c928b21d-6f2b-4f36-9fcc-526108399b24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleSheetsToUnity", "GoogleSheetsToUnity.csproj", "{de7e3fc6-f5fe-df87-48cd-1a6a310dad3e}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmoaebaUtilsEditor", "AmoaebaUtilsEditor.csproj", "{75e49f93-94ed-4d3d-50fa-d8646630885f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmoaebaUtilsPersistanceTests", "AmoaebaUtilsPersistanceTests.csproj", "{e31b7272-49b6-6ec1-3fc7-0aefc5ff2f87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleExporter", "GoogleExporter.csproj", "{c08d7941-2e99-8cba-f436-6184600c7131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptableObjectUtilsEditor", "ScriptableObjectUtilsEditor.csproj", "{d3b01585-ffd8-f021-ceba-d6d469efc7a9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InControl.Editor", "InControl.Editor.csproj", "{aaa3ce12-245a-f26e-6b27-33ffad833e1a}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ef9883f9-ab90-8dfe-5501-4be51811e8f3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ef9883f9-ab90-8dfe-5501-4be51811e8f3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c0f186c4-a1c5-f73b-76ef-08d064267372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c0f186c4-a1c5-f73b-76ef-08d064267372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c0edbe37-8688-5ede-39f6-0052b1d40a7e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c0edbe37-8688-5ede-39f6-0052b1d40a7e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b6ebb3d7-714a-6d48-7f27-d5fd217f1ed9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b6ebb3d7-714a-6d48-7f27-d5fd217f1ed9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ffff8fb2-cff9-76fe-8c35-19b59bce1f57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ffff8fb2-cff9-76fe-8c35-19b59bce1f57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c928b21d-6f2b-4f36-9fcc-526108399b24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c928b21d-6f2b-4f36-9fcc-526108399b24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{de7e3fc6-f5fe-df87-48cd-1a6a310dad3e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{de7e3fc6-f5fe-df87-48cd-1a6a310dad3e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75e49f93-94ed-4d3d-50fa-d8646630885f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75e49f93-94ed-4d3d-50fa-d8646630885f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e31b7272-49b6-6ec1-3fc7-0aefc5ff2f87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e31b7272-49b6-6ec1-3fc7-0aefc5ff2f87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c08d7941-2e99-8cba-f436-6184600c7131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c08d7941-2e99-8cba-f436-6184600c7131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d3b01585-ffd8-f021-ceba-d6d469efc7a9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d3b01585-ffd8-f021-ceba-d6d469efc7a9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{aaa3ce12-245a-f26e-6b27-33ffad833e1a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{aaa3ce12-245a-f26e-6b27-33ffad833e1a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
