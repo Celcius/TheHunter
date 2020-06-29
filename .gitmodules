@@ -1,3 +1,6 @@
-[submodule "TheHunter/Packages/AmoaebaUtils"]
+[submodule "AmoaebaUtils"]
 	path = TheHunter/Packages/AmoaebaUtils
+	url = https://github.com/Celcius/AmoaebaUtils.git
+[submodule "TheHunter/Assets/Packages"]
+	path = TheHunter/Assets/Packages
 	url = https://github.com/Celcius/AmoaebaUtils.git

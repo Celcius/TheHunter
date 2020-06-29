@@ -234,39 +234,6 @@
     <Reference Include="UnityEditor.Android.Extensions">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Buffers">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Client">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="TinyJSON">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/TinyJSON.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.AccessControl">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.AccessControl.DLL</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Extensions">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Documents">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Documents.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Spreadsheets">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Spreadsheets.dll</HintPath>
-    </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>
