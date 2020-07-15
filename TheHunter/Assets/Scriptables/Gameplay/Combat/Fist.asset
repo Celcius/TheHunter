@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd364285a2e331246a0b63ac84d60561, type: 3}
+  m_Name: Fist
+  m_EditorClassIdentifier: 
+  representation: {fileID: 21300000, guid: 0531bcd4c15cce24a82feef5a5256744, type: 3}
+  weakTo: {fileID: 11400000, guid: e1fd5a8a91000934287f7eca25aaf136, type: 2}
+  strongTo: {fileID: 11400000, guid: 65ecbe0125083b847b84c4f7455e0992, type: 2}
+  color: {r: 1, g: 0, b: 0.2744317, a: 1}

@@ -36,104 +36,26 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MessagePack\Annotations\Attributes.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Annotations\IMessagePackSerializationCallbackReceiver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\BitOperations.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\BufferWriter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\ExtensionHeader.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\ExtensionResult.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\CollectionFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\CollectionHelpers`2.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\DateTimeFormatters.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\DictionaryFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\DynamicObjectTypeFallbackFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\EnumAsStringFormatter`1.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\GenericEnumFormatter`1.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\IMessagePackFormatter`1.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\IgnoreFormatter`1.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\MultiDimensionalArrayFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\NilFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\NullableFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\PrimitiveObjectFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\StandardClassLibraryFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\TypelessFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Formatters\UnsafeBinaryFormatters.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\HashCode.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\IFormatterResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\AsymmetricKeyHashTable.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\AutomataDictionary.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\ByteArrayStringHashTable.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\CodeGenHelpers.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\DateTimeConstants.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\DynamicAssembly.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\ExpressionUtility.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\FarmHash.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\GuidBits.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\ILGeneratorExtensions.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\ReflectionExtensions.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\RuntimeTypeHandleEqualityComparer.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\Sequence`1.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\ThreadsafeTypeKeyHashTable.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\TinyJsonReader.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Internal\UnsafeMemory.Low.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.Helper.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.Safe.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.Safe32.Dirty.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.Safe64.Dirty.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.Unsafe.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.Unsafe32.Dirty.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.Unsafe64.Dirty.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\LZ4\LZ4Codec.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackCode.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackCompression.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackReader.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackSecurity.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackSerializationException.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackSerializer.Json.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackSerializer.NonGeneric.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackSerializer.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackSerializerOptions.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackStreamReader.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\MessagePackWriter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Nil.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\AttributeFormatterResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\BuiltinResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\CachingFormatterResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\CompositeResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\ContractlessReflectionObjectResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\DynamicEnumAsStringResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\DynamicEnumResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\DynamicGenericResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\DynamicObjectResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\DynamicUnionResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\NativeDateTimeResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\NativeDecimalResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\NativeGuidResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\PrimitiveObjectResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\StandardResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\StaticCompositeResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\TypelessContractlessStandardResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Resolvers\TypelessObjectResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\SafeBitConverter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\SequencePool.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\SequenceReader.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\SequenceReaderExtensions.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\StreamPolyfillExtensions.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\StringEncoding.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\T4\ForceSizePrimitiveFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\T4\MessagePackReader.Integers.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\T4\PrimitiveFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\T4\TupleFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\T4\UnsafeMemory.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\T4\ValueTupleFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\ThisLibraryExtensionTypeCodes.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Unity\Extension\UnityBlitResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Unity\Extension\UnsafeBlitFormatter.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Unity\Formatters.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Unity\MessagePackWindow.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Unity\UnityResolver.cs" />
-     <Compile Include="Assets\Scripts\MessagePack\Utilities.cs" />
-     <None Include="Assets\Scripts\MessagePack\MessagePack.asmdef" />
+     <Compile Include="Assets\ActionUI.cs" />
+     <Compile Include="Assets\ActionUIButton.cs" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -317,8 +239,20 @@
     <Reference Include="UnityEditor">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Google.GData.AccessControl">
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.AccessControl.DLL</HintPath>
+    </Reference>
     <Reference Include="Google.GData.Client">
         <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Documents">
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions">
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Spreadsheets">
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Spreadsheets.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Newtonsoft.Json.dll</HintPath>
@@ -326,29 +260,17 @@
     <Reference Include="TinyJSON">
         <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/TinyJSON.dll</HintPath>
     </Reference>
-    <Reference Include="Google.GData.AccessControl">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.AccessControl.DLL</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Extensions">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Documents">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Documents.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Spreadsheets">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/GoogleExporter/Google Sheets to Unity/Scripts/v3/Plugins/Google.GData.Spreadsheets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Buffers">
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/Persistance/Plugins/System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Memory">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Memory.dll</HintPath>
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/Persistance/Plugins/System.Memory.dll</HintPath>
     </Reference>
-    <Reference Include="System.Buffers">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Buffers.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/Persistance/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Plugins/System.Threading.Tasks.Extensions.dll</HintPath>
+        <HintPath>D:/Ivo Capelo/Projects/TheHunter/TheHunter/Assets/Packages/AmoaebaUtils/Persistance/Plugins/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -779,14 +701,24 @@
       <Name>GoogleSheetsToUnity</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="MessagePack.csproj">
-      <Project>{c928b21d-6f2b-4f36-9fcc-526108399b24}</Project>
-      <Name>MessagePack</Name>
+    <ProjectReference Include="AmoaebaLockSystem.csproj">
+      <Project>{b0eb38cf-6c69-930d-e89b-37091eee6de8}</Project>
+      <Name>AmoaebaLockSystem</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="GoogleExporter.csproj">
       <Project>{c08d7941-2e99-8cba-f436-6184600c7131}</Project>
       <Name>GoogleExporter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ActionCommandsTests.csproj">
+      <Project>{b6392ac3-fdad-0b2b-f900-d009bc305816}</Project>
+      <Name>ActionCommandsTests</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="WalletTests.csproj">
+      <Project>{60a0a0fa-729d-e17f-43a8-4e89c4ac9e9d}</Project>
+      <Name>WalletTests</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="AmoaebaUtils.csproj">
@@ -797,6 +729,11 @@
     <ProjectReference Include="InControl.Examples.csproj">
       <Project>{ffff8fb2-cff9-76fe-8c35-19b59bce1f57}</Project>
       <Name>InControl.Examples</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="AmoaebaWallet.csproj">
+      <Project>{05175ddc-7bfb-a75c-19bf-fa671d3685bd}</Project>
+      <Name>AmoaebaWallet</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="InControl.csproj">
@@ -814,9 +751,24 @@
       <Name>ScriptableObjectUtilsEditor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="ActionCommands.csproj">
+      <Project>{2a166d77-6370-04df-691e-97d66a88d02c}</Project>
+      <Name>ActionCommands</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="AmoaebaUtilsEditor.csproj">
       <Project>{75e49f93-94ed-4d3d-50fa-d8646630885f}</Project>
       <Name>AmoaebaUtilsEditor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="NewAssembly.csproj">
+      <Project>{6165aca2-7133-1c68-5fbb-968125ece7d3}</Project>
+      <Name>NewAssembly</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="MessagePack.csproj">
+      <Project>{c928b21d-6f2b-4f36-9fcc-526108399b24}</Project>
+      <Name>MessagePack</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="AmoaebaAds.csproj">

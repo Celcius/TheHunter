@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a877c7b2f6cba9747bf1320a6e4f71a1, type: 3}
+  m_Name: Little Red
+  m_EditorClassIdentifier: 
+  health: 10
+  type: {fileID: 11400000, guid: 65ecbe0125083b847b84c4f7455e0992, type: 2}
+  representation: {fileID: 21300000, guid: 9edcdde49360c884787f2d78d09eb06b, type: 3}
+  damageMin: 1
+  damageMax: 1
+  representationColor: {r: 1, g: 1, b: 1, a: 1}

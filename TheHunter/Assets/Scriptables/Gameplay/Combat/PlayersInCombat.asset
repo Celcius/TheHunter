@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ef4f5e5788e8643b12f187de01c814, type: 3}
+  m_Name: PlayersInCombat
+  m_EditorClassIdentifier: 
+  setupValue:
+  - {fileID: 11400000, guid: 7ba643f71b206394cb5ccb456302f599, type: 2}
+  - {fileID: 11400000, guid: b1a909d2aed29404599c6be3f9660a62, type: 2}
+  - {fileID: 11400000, guid: 827bad44c46d1f944b835b99019f82b4, type: 2}
+  - {fileID: 11400000, guid: b79d8ca207b128b47a6c9422c32d535c, type: 2}
+  - {fileID: 11400000, guid: 1be1c0db26d1f9646b8b610a7cd0b835, type: 2}
+  value:
+  - {fileID: 11400000, guid: 7ba643f71b206394cb5ccb456302f599, type: 2}
+  - {fileID: 11400000, guid: b1a909d2aed29404599c6be3f9660a62, type: 2}
+  - {fileID: 11400000, guid: 827bad44c46d1f944b835b99019f82b4, type: 2}
+  - {fileID: 11400000, guid: b79d8ca207b128b47a6c9422c32d535c, type: 2}
+  - {fileID: 11400000, guid: 1be1c0db26d1f9646b8b610a7cd0b835, type: 2}
