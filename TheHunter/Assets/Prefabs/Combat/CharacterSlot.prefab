@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2573816490458754585}
   - component: {fileID: 5766393830588672177}
   - component: {fileID: 8816778988539376967}
+  - component: {fileID: 3401760257335488715}
+  - component: {fileID: 8770712953798889751}
   m_Layer: 0
   m_Name: CharacterSlot
   m_TagString: Untagged
@@ -54,7 +56,7 @@ MonoBehaviour:
   varToObserve: {fileID: 0}
   indexToObserve: 0
   slot: {fileID: 3517915700959633099}
-  combatActions: {fileID: 0}
+  combatActions: {fileID: 11400000, guid: 014bc596fb802db468478ce91ecf63c5, type: 2}
 --- !u!114 &5766393830588672177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,10 +96,21 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 8770712953798889751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2573816490458754585}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8816778988539376967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +124,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArrayVar: {fileID: 0}
+--- !u!222 &3401760257335488715
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8374399602832910801}
+  m_CullTransparentMesh: 0
+--- !u!114 &8770712953798889751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8374399602832910801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73cd3cec0c335af40aee2d2c54a2707a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
 --- !u!1001 &7227533392205995839
 PrefabInstance:
   m_ObjectHideFlags: 0

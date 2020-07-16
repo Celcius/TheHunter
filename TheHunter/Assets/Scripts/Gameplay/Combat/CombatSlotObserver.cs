@@ -16,7 +16,6 @@ public class CombatSlotObserver : ArrayVarIndexObserver<CharacterArrayVar, Chara
 
     [SerializeField]
     private CombatActionVarArray combatActions;
-
     protected override void Start()
     {
         base.Start();
@@ -32,6 +31,6 @@ public class CombatSlotObserver : ArrayVarIndexObserver<CharacterArrayVar, Chara
 
     public void OnClick()
     {
-        //CombatAction newAction = new CombatAction(slot);
+        slot.OnClick();
     }
 }

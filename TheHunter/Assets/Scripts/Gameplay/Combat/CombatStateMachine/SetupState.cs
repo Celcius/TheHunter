@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AmoaebaUtils;
 
 public class SetupState : StateMachineBehaviour
 {
@@ -11,6 +12,9 @@ public class SetupState : StateMachineBehaviour
     private CombatActionVarArray actions;
 
     private bool needsToAnimate = false;
+
+    [SerializeField]
+    private AnimatorVar combatAnimator;
 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -30,10 +34,10 @@ public class SetupState : StateMachineBehaviour
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        combatAnimator.Value.SetInteger("ActionsCount", 0);
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

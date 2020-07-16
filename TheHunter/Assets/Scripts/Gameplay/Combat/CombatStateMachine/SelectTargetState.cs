@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using AmoaebaUtils;
 
-public class SelectCharacterState : StateMachineBehaviour
+public class SelectTargetState : StateMachineBehaviour
 {
     [SerializeField]
     private CombatSlotArrayVar players;
@@ -15,15 +15,30 @@ public class SelectCharacterState : StateMachineBehaviour
     private AnimatorVar combatAnimator;
 
     [SerializeField]
+    private ActionUIVar actionUI;
+
+    [SerializeField]
     private CombatCharacterVar caster;
+
+    [SerializeField]
+    private CombatActionVarArray actions;
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         players.ShowStars(true);
-        enemies.ShowStars(false);
+        enemies.ShowStars(true);
         
         foreach(CombatSlotObserver observer in players.Value)
+        {
+            if(observer.Character != null)
+            {
+                observer.Character.onSelection += OnSelection;
+            }
+        }
+
+        foreach(CombatSlotObserver observer in enemies.Value)
         {
             if(observer.Character != null)
             {
@@ -34,8 +49,30 @@ public class SelectCharacterState : StateMachineBehaviour
 
     private void OnSelection(CombatCharacter character)
     {
-        caster.Value = character;
-        combatAnimator.Value.SetTrigger("SelectTarget");
+
+        List<CombatCharacter> selected = new List<CombatCharacter>();
+        if(caster.Value.IsSelectionCharacter)
+        {
+            selected.Add(character);
+        }
+        else
+        {
+            CombatSlotArrayVar selectedVars = character.Definition.Team == CharacterDefinition.TeamType.Player? players : enemies;
+        
+            foreach(CombatSlotObserver selectedCharacter in selectedVars.Value)
+            {
+                if(selectedCharacter.Character != null && selectedCharacter.Character.IsAlive)
+                {
+                    selected.Add(selectedCharacter.Character);
+                }
+            }
+            
+        }
+        CombatAction action = new CombatAction(caster.Value, selected.ToArray());
+        actions.Add(action);
+        combatAnimator.Value.SetInteger("ActionsCount", actions.Count());
+        combatAnimator.Value.SetTrigger("TargetSelected");
+        actionUI.Value.AnimateAddAction(actions.Count()-1);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -48,6 +85,14 @@ public class SelectCharacterState : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         foreach(CombatSlotObserver observer in players.Value)
+        {
+            if(observer.Character != null)
+            {
+                observer.Character.onSelection -= OnSelection;
+            }
+        }
+
+                foreach(CombatSlotObserver observer in enemies.Value)
         {
             if(observer.Character != null)
             {

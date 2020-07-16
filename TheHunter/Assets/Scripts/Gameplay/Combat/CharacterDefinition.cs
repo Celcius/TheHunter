@@ -37,10 +37,9 @@ public class CharacterDefinition : ScriptableObject
     [SerializeField]
     private TeamType team;
     public TeamType Team => team;
-
+    
     [SerializeField]
-    private Sprite actionRepresentation;
-    public Sprite ActionRepresentation;
-
+    private CharacterAction action;
+    public CharacterAction Action => action;
 
 }

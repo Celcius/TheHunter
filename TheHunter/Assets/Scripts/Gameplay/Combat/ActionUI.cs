@@ -31,6 +31,9 @@ public class ActionUI : MonoBehaviour
     [SerializeField]
     private BoolVar usingActions;
 
+    [SerializeField]
+    private CombatActionVarArray actions;
+
     public void Start()
     {
         currentActionIndex.OnChange += OnActionIndexChange;
@@ -77,7 +80,8 @@ public class ActionUI : MonoBehaviour
         ActionUIButton button = GetButton(index);
         if(button != null)
         {
-            button.AnimateAdd();
+            CombatAction action = actions.Value[index];
+            button.AnimateAdd(action.GetRepresentation());
         }
     }
     

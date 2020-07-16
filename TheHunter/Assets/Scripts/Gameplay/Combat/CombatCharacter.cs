@@ -15,6 +15,12 @@ public class CombatCharacter : MonoBehaviour
     private CharacterDefinition definition;
     public  CharacterDefinition Definition => definition;
 
+    public bool IsSelectionCharacter => NextAction.IsSelectionCharacter;
+    
+    public delegate void OnSelectionStarted(CombatCharacter Character);
+
+    public event OnSelectionStarted onSelection;
+
     private int currentHealth = 0;
     public int Health => currentHealth;
     public bool IsAlive => Health > 0;
@@ -23,7 +29,12 @@ public class CombatCharacter : MonoBehaviour
     public int ActionPoints => currentActionPoints;
 
     private const int maxActionPoints = 3;
-    
+
+    public CharacterAction NextAction => Definition.Action;
+
+    [SerializeField]
+    private CombatCharacter[] playerCharacters;
+
     private void Start()
     {
         characterUI = GetComponent<CombatCharacterUI>();
@@ -70,6 +81,11 @@ public class CombatCharacter : MonoBehaviour
         }
     }
 
+    public void OnClick()
+    {
+        onSelection?.Invoke(this);
+    }
+
 #if UNITY_EDITOR
 [CustomEditor(typeof(CombatCharacter))]
 public class UndrawableGraphicEditor : Editor
@@ -95,6 +111,7 @@ public class UndrawableGraphicEditor : Editor
             EditorUtility.SetDirty(target);
         }
     }
+
 }
 #endif
 }

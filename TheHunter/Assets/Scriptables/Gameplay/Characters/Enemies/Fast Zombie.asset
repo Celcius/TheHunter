@@ -19,3 +19,4 @@ MonoBehaviour:
   damageMax: 1
   representationColor: {r: 0.39889976, g: 0.8584906, b: 0.36850303, a: 1}
   team: 1
+  action: {fileID: 11400000, guid: cf7b9ddec227ab942b491e52a4814f3a, type: 2}

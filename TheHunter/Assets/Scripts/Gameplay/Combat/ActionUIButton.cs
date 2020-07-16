@@ -10,6 +10,9 @@ public class ActionUIButton : MonoBehaviour
     private Button button;
     public Button Button => button;
 
+    [SerializeField]
+    private Image image;
+
     private Animator animationHandler;
     
     void Start()
@@ -24,8 +27,9 @@ public class ActionUIButton : MonoBehaviour
         animationHandler.enabled = canAnimate;
     }
 
-    public void AnimateAdd()
+    public void AnimateAdd(Sprite newImage)
     {   
+        image.sprite = newImage;
         animationHandler.SetTrigger("AddAction");
     }
 

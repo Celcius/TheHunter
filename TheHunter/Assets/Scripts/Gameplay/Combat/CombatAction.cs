@@ -31,6 +31,6 @@ public class CombatAction
 
     public Sprite GetRepresentation()
     {
-        return caster.Definition.ActionRepresentation;
+        return caster.NextAction.Representation;
     }
 }
