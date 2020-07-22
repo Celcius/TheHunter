@@ -57,8 +57,10 @@ MonoBehaviour:
   - {fileID: 7220612190841337583}
   - {fileID: 9174526386700720759}
   - {fileID: 8416442812345595705}
+  combatAnimator: {fileID: 0}
   currentActionIndex: {fileID: 11400000, guid: 17f9f1f9883ecf041ba307a55c117e5d, type: 2}
   usingActions: {fileID: 11400000, guid: 49d6b3e5eb80f2149bb24cffa4f5bf2d, type: 2}
+  actions: {fileID: 0}
 --- !u!114 &1274969272465457986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d3223ae18fb5e449e2efb7e7baf8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScriptVar: {fileID: 0}
 --- !u!1 &6371946110040707192
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,65 +837,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5587751439687851550}
     m_Modifications:
-    - target: {fileID: 970796549998292796, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 970796549998292796, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 970796549998292796, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 970796549998292796, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1802517902688835953}
-    - target: {fileID: 970796549998292796, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AnimateCancelAction
-      objectReference: {fileID: 0}
-    - target: {fileID: 970796549998292796, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 970796549998292796, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 2603336623731301055, guid: 35ddb6336770bdf40a175a7b47b7f03a,
         type: 3}
       propertyPath: m_Name
       value: ActionUIButton (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839151346060447945, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839151346060447945, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839151346060447945, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 88
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839151346060447945, guid: 35ddb6336770bdf40a175a7b47b7f03a,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5387565585589817519, guid: 35ddb6336770bdf40a175a7b47b7f03a,
         type: 3}

@@ -3,25 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using AmoaebaUtils;
 
-public class SelectTargetState : StateMachineBehaviour
+public class SelectTargetState : CombatMachineState
 {
     [SerializeField]
-    private CombatSlotArrayVar players;
-
-    [SerializeField]
-    private CombatSlotArrayVar enemies;
-
-    [SerializeField]
-    private AnimatorVar combatAnimator;
-
-    [SerializeField]
-    private ActionUIVar actionUI;
-
-    [SerializeField]
     private CombatCharacterVar caster;
-
-    [SerializeField]
-    private CombatActionVarArray actions;
 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -66,7 +51,6 @@ public class SelectTargetState : StateMachineBehaviour
                     selected.Add(selectedCharacter.Character);
                 }
             }
-            
         }
         CombatAction action = new CombatAction(caster.Value, selected.ToArray());
         actions.Add(action);

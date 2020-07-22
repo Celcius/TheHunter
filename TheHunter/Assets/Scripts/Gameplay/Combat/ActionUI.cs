@@ -85,6 +85,38 @@ public class ActionUI : MonoBehaviour
         }
     }
     
+    public void AnimateEnterWithAction(int index)
+    {
+        ActionUIButton button = GetButton(index);
+        if(button != null)
+        {
+            CombatAction action = actions.Value[index];
+            button.AnimateEnterWithAction(action.GetRepresentation());
+        }
+    }
+
+    public void HideButtons()
+    {
+        for(int i = 0; i < buttons.Length;i++)
+        {
+            ActionUIButton button = GetButton(i);
+            if(button != null)
+            {
+                button.Hide();
+            }
+        }
+    }
+
+    public void EnterButtonsWithAction()
+    {
+        for(int i = 0; i < buttons.Length;i++)
+        {
+            AnimateEnterWithAction(i);
+        }
+    }
+
+    
+    
 
     private void OnActionIndexChange(int oldIndex, int newIndex)
     {

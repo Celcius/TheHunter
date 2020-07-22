@@ -7,10 +7,10 @@ using AmoaebaUtils;
 public class CombatAction
 {
     protected CombatCharacter caster;
-    public CombatCharacter Caster;
+    public CombatCharacter Caster => caster;
 
     protected CombatCharacter[] targets;
-    public CombatCharacter[] Targets;
+    public CombatCharacter[] Targets => targets;
 
     public CombatAction(CombatCharacter caster, CombatCharacter[] targets)
     {

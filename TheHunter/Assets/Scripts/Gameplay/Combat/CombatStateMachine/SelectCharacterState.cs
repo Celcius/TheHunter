@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using AmoaebaUtils;
 
-public class SelectCharacterState : StateMachineBehaviour
+public class SelectCharacterState : CombatMachineState
 {
-    [SerializeField]
-    private CombatSlotArrayVar players;
-
-    [SerializeField]
-    private CombatSlotArrayVar enemies;
-
-    [SerializeField]
-    private AnimatorVar combatAnimator;
 
     [SerializeField]
     private CombatCharacterVar caster;

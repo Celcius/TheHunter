@@ -16,6 +16,8 @@ public class CombatCharacter : MonoBehaviour
     public  CharacterDefinition Definition => definition;
 
     public bool IsSelectionCharacter => NextAction.IsSelectionCharacter;
+
+    public int innitiative => Definition.Type.Innitiative;
     
     public delegate void OnSelectionStarted(CombatCharacter Character);
 

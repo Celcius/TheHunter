@@ -18,6 +18,10 @@ public class CombatType : ScriptableObject
     private Color color;
     public Color Color => color;
 
+    [SerializeField]
+    private int innitiative = 0;
+    public int Innitiative => innitiative;
+
     public CombatTypeRelation GetDefenderRelation(CombatType attackerType)
     {
         if(attackerType == weakTo)

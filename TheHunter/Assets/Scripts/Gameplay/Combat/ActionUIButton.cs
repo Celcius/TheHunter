@@ -54,8 +54,9 @@ public class ActionUIButton : MonoBehaviour
         return 1.0f;
     }
 
-    public void AnimateEnterWithAction()
+    public void AnimateEnterWithAction(Sprite newImage)
     {
+        image.sprite = newImage;
         animationHandler.SetTrigger("AppearWAction");
     }
 
