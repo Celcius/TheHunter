@@ -60,9 +60,9 @@ public class ActionUIButton : MonoBehaviour
         animationHandler.SetTrigger("AppearWAction");
     }
 
-    public void Hide()
+    public void Hide(bool isInstant = true)
     {
-        animationHandler.SetTrigger("Hide");
+        animationHandler.SetTrigger(isInstant ? "Hide" : "HideSlow");
     }
 
     public void UpdateModel()

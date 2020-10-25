@@ -27,12 +27,12 @@ public class CharacterDefinition : ScriptableObject
     [SerializeField]
     private int damageMin;
 
+    public int DamageMin => damageMin;
+
     [SerializeField]
     private int damageMax;
 
-    [SerializeField]
-    private Color representationColor = Color.white;
-    public Color RepresentationColor => representationColor;
+    public int DamageMax => damageMax;
 
     [SerializeField]
     private TeamType team;

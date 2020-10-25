@@ -12,18 +12,50 @@ public abstract class CharacterAction : ScriptableObject
     private Sprite representation;
     public Sprite Representation => representation;
 
-    public IEnumerator Selection => (IsSelectionCharacter? SelectCharacter() : SelectSide());
-    
-    // Start is called before the first frame update
-    private IEnumerator SelectCharacter()
+    [SerializeField]
+    private CombatTypeDefinition combatTypeDefinition;
+
+    public IEnumerator ExecuteAction(CombatCharacter caster, CombatCharacter[]  targets)
     {
-        yield break;
+        if(caster == null || targets == null || targets.Length == 0)
+        {
+            yield break;
+        }
+
+        if(targets[0].Definition.Team == caster.Definition.Team)
+        {
+            yield return BuffAction(caster, targets);
+        }
+        else
+        {
+            yield return AttackAction(caster, targets);
+        }
     }
 
-    private IEnumerator SelectSide()
+    protected virtual IEnumerator AttackAction(CombatCharacter caster, CombatCharacter[] targets)
     {
-        yield break;
+        CharacterDefinition def = caster.Definition;
+        caster.CharacterUI.AnimateAttack();
+
+        yield return new WaitForSeconds(1.0f);
+
+        foreach(CombatCharacter target in targets)
+        {
+            if(target != null && target.IsAlive)
+            {
+                int damage = Random.Range(def.DamageMin, def.DamageMax);
+                damage = (int)Mathf.Round(damage * combatTypeDefinition.GetDamageModifier(def.Type, target.Definition.Type));
+                target.TakeDamage(damage);
+            }
+        }
+
+        yield return new WaitForSeconds(1.0f);
     }
 
-    public abstract IEnumerator ExecuteAction(CombatCharacter caster, CombatCharacter[]  targets);
+    protected virtual IEnumerator BuffAction(CombatCharacter caster, CombatCharacter[] targets)
+    {
+        CharacterDefinition def = caster.Definition;
+        caster.CharacterUI.AnimateBuff();
+        yield return new WaitForSeconds(1.0f);
+    }
 }

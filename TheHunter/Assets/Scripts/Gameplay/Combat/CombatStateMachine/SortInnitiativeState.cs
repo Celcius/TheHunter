@@ -14,18 +14,19 @@ public class SortInnitiativeState : CombatMachineState
     
     private float elapsedTime = 0;
     [SerializeField]
-    private float animationTime = 2.0f;
+    private float animationTime = 0.5f;
     private bool hasAnimatedEnter = false;
     private bool hasSetTrigger = false;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        hasAnimatedEnter = false;
+        hasSetTrigger = false;
         List<CombatAction> actionsByInnitiative = new List<CombatAction>(actions.Value);
 //        
         actionsByInnitiative.Sort(new CombatActionComparer());
-        actionUI.Value.HideButtons();
+        actionUI.Value.HideButtons(false);
         actions.Value = actionsByInnitiative.ToArray();
         
         elapsedTime = animationTime;

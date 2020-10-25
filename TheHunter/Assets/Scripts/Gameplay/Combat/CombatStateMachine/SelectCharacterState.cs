@@ -14,6 +14,7 @@ public class SelectCharacterState : CombatMachineState
     {
         players.ShowStars(true);
         enemies.ShowStars(false);
+        caster.Value = null;
         
         foreach(CombatSlotObserver observer in players.Value)
         {

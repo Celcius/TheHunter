@@ -5,7 +5,6 @@ using UnityEngine;
 public class PrepareCombatResolutionState : CombatMachineState
 {
     private bool hasTransitioned = false;
-    private int animated = 0;
     private float elapsedAnimationTime = 0;
     [SerializeField]
     private float enterAnimationDuration = 2.0f;

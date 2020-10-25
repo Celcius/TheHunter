@@ -27,6 +27,18 @@ public class SetupState : StateMachineBehaviour
 //     OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        combatAnimator.Value.ResetTrigger("PrepareResolutionDone");
+        combatAnimator.Value.ResetTrigger("InnitiativeSorted");
+        combatAnimator.Value.ResetTrigger("ResolvedAttack");
+        combatAnimator.Value.ResetTrigger("IncreasedAP");
+        combatAnimator.Value.ResetTrigger("Entered");
+        combatAnimator.Value.ResetTrigger("SelectTarget");
+        combatAnimator.Value.ResetTrigger("TargetSelected");
+        combatAnimator.Value.ResetTrigger("EnoughActions");
+        combatAnimator.Value.SetInteger("EnemyCount",0);
+        combatAnimator.Value.SetInteger("PlayerCount",0);
+        combatAnimator.Value.SetInteger("ActionsCount",0);
+        combatAnimator.Value.SetInteger("ActionsPerformed",0);
         if(actionUI.Value != null && needsToAnimate)
         {
             actionUI.Value.AnimateInitialLayout();

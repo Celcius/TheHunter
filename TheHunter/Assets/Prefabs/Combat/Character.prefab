@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3193379097298584551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7003721246019529158
 CanvasRenderer:
@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 2943174440322275252}
   - component: {fileID: 5125753322049741774}
   - component: {fileID: 6097731935075926516}
+  - component: {fileID: 3099200154977067210}
   m_Layer: 5
   m_Name: Character
   m_TagString: Untagged
@@ -318,6 +319,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60bf2c66e109fb46a63fae14c4cb7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCharacters: []
+--- !u!95 &3099200154977067210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953237854273749947}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdc12be6a2564ce4a8800ab69cd0458e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4859306710070337020
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8584906, g: 0.24701849, b: 0.26179802, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

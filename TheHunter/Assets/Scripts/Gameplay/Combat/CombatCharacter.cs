@@ -11,6 +11,7 @@ using UnityEditor;
 public class CombatCharacter : MonoBehaviour
 {
     private CombatCharacterUI characterUI;
+    public CombatCharacterUI CharacterUI => characterUI;
 
     private CharacterDefinition definition;
     public  CharacterDefinition Definition => definition;
@@ -51,8 +52,8 @@ public class CombatCharacter : MonoBehaviour
         }
 #endif
         this.definition = definition;
-        characterUI.OnDefinitionChange(definition);
         this.currentHealth = definition == null? 0 : definition.Health;
+        characterUI.OnDefinitionChange(definition);
     }
 
     public void IncrementActionPoints()
@@ -74,18 +75,19 @@ public class CombatCharacter : MonoBehaviour
 
     public IEnumerator OnAction(CombatCharacter[] targets)
     {
-        float toElapse = 3.0f;
-        while(toElapse > 0.0f)
-        {
-            Debug.Log($"{this.name} Performing...");
-            yield return new WaitForEndOfFrame();
-            toElapse -= Time.deltaTime;
-        }
+        yield return definition.Action.ExecuteAction(this, targets);
     }
 
     public void OnClick()
     {
         onSelection?.Invoke(this);
+    }
+
+    
+    public void TakeDamage(int damage)
+    {
+        ChangeHealth(damage);
+        characterUI.AnimateDamage();
     }
 
 #if UNITY_EDITOR
@@ -113,7 +115,6 @@ public class UndrawableGraphicEditor : Editor
             EditorUtility.SetDirty(target);
         }
     }
-
 }
 #endif
 }

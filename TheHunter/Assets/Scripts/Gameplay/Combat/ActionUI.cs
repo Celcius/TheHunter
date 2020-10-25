@@ -26,17 +26,10 @@ public class ActionUI : MonoBehaviour
     private IEnumerator turnAction = null;
 
     [SerializeField]
-    private IntVar currentActionIndex;
-
-    [SerializeField]
-    private BoolVar usingActions;
-
-    [SerializeField]
     private CombatActionVarArray actions;
 
     public void Start()
     {
-        currentActionIndex.OnChange += OnActionIndexChange;
 
         initPositions = new Vector3[buttons.Length];
         for(int i = 0; i < buttons.Length; i++)
@@ -48,11 +41,6 @@ public class ActionUI : MonoBehaviour
         {
             distanceRef = Mathf.Abs(initPositions[1].x - initPositions[0].x);
         }
-    }
-
-    private void OnDestroy()
-    {
-        currentActionIndex.OnChange -= OnActionIndexChange;
     }
 
     public void AnimateInitialLayout()
@@ -95,14 +83,14 @@ public class ActionUI : MonoBehaviour
         }
     }
 
-    public void HideButtons()
+    public void HideButtons(bool isInstant = true)
     {
         for(int i = 0; i < buttons.Length;i++)
         {
             ActionUIButton button = GetButton(i);
             if(button != null)
             {
-                button.Hide();
+                button.Hide(isInstant);
             }
         }
     }
@@ -115,13 +103,10 @@ public class ActionUI : MonoBehaviour
         }
     }
 
-    
-    
-
-    private void OnActionIndexChange(int oldIndex, int newIndex)
+    public void AnimateUse(int index)
     {
-        ActionUIButton button = GetButton(newIndex);
-        if(usingActions.Value && button != null)
+        ActionUIButton button = GetButton(index);
+        if(button != null)
         {
             button.AnimateUse();
         }

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelectionCharacter: 0
   representation: {fileID: 21300000, guid: 6c5707a98871ec44fa19ebb62953d48a, type: 3}
+  combatTypeDefinition: {fileID: 11400000, guid: e80d35ae5f2425c4da2eb16aca79c5ab,
+    type: 2}
